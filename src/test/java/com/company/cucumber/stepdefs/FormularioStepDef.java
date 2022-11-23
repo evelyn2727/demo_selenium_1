@@ -5,6 +5,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class FormularioStepDef {
 
@@ -24,7 +25,8 @@ public class FormularioStepDef {
 
     @Cuando("Yo ingreso los datos del formulario")
     public void yoIngresoLosDatosDelFormulario(DataTable usuarios) {
-        baseStepDefs.currentPage.registroForm(usuarios);
+
+               baseStepDefs.currentPage.registroForm(usuarios);
     }
 
     @Entonces("Yo deberia visualizar la página para seleccionar cabina")
