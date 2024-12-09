@@ -63,11 +63,11 @@ public class BaseTest {
     private static void setChromeDriverProperty(){
 
         if(System.getProperty("os.name").toLowerCase().contains("windows")){
-            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome1/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome/chromedriver.exe");
         }else if(System.getProperty("os.name").toLowerCase().contains("mac")){
-            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome1/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome/chromedriver");
         }else{
-            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome1/chromedriverlinux");
+            System.setProperty("webdriver.chrome.driver", "resources/drivers/chrome/chromedriverlinux");
         }
 
         driver = new ChromeDriver();
